@@ -122,3 +122,9 @@ In this test we can isolate the presentation layer from the business logic and d
 - Making changes in a layer has very little affect on other layers as they are loosely coupled.
 
 Should this have been done using a monolithic approach there would have been no layers thus no clear separation of concerns. This makes testing and maintaining the application much more challenging. A monolithic approach would probably be more suitable for very small applications.
+
+### 3)
+
+#### One disadvantage of layered architecture is often given as the risk of 'leaking logic' between the layers. What does this mean in practice and why might it be a problem? - hint: What is the point of layers and how do we draw the boundary?
+
+
