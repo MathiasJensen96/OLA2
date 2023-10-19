@@ -8,7 +8,6 @@
 
 ## Questions
 
-### What is a ’Layered’ Architecture – what is the difference between an open and a
-closed layer? – provide an example of why closed layers may cause a problem
+### 1) What is a ’Layered’ Architecture – what is the difference between an open and a closed layer? – provide an example of why closed layers may cause a problem
 
 blablablabla
