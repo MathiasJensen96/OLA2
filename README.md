@@ -100,8 +100,25 @@ If we consider a web application where users can submit and view posts, the appl
         # Code to retrieve all posts from the database
   ```
 
+#### Example testing scenario
+If we wanted to test the creation of a post in the layered archtecture the test could look something like this:
+```bash
+# Test for creating a post using a testing framework like pytest
+
+def test_create_post():
+    web_app = WebApp()
+    web_app.submit_post("Test Post")
+    
+    # Assert that the post was created and exists in the database
+    posts = web_app.controller.get_posts()
+    assert "Test Post" in posts
+```
+In this test we can isolate the presentation layer from the business logic and data access layers. This makes it a lot easier to focus on the specific thing we want to test. It generally makes it easier to make tests because you can isolate the thing you want to test.
+
 #### Advantages
 
 - Testing is easier because you can test each layer by itself.
 - It's easy to use mocking or test databases for each layer.
 - Making changes in a layer has very little affect on other layers as they are loosely coupled.
+
+Should this have been done using a monolithic approach there would have been no layers thus no clear separation of concerns. This makes testing and maintaining the application much more challenging. A monolithic approach would probably be more suitable for very small applications.
