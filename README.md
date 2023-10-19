@@ -39,3 +39,69 @@ Closed layers are great in terms of maintaining the integrity of a system and to
 
 
 ### 2)
+
+#### Testability is often given as an advantage of layered architectures. How does a layered architecture make testing easier and more structured?
+
+A layered architecture is often preferred in software design due to its advatages in terms of testability, maintainabilty and scalability. Here testability is on of the main benefits because it helps to create a more manageable approach to software testing. This is primarily done through the principle of loose coupling and separation of concerns.
+
+#### Provide an example of how testing can be supported by using a layered architectural approach
+
+If we consider a web application where users can submit and view posts, the application is divided into 3 different layers:
+
+- Presentation Layer (UI)
+
+  This layer handles the user interface and interactions. It is responsible for rendering web pages and handeling the users input.
+  ```bash
+  # presentation_layer.py
+
+  class WebApp:
+    def __init__(self):
+        self.controller = PostController()
+
+    def submit_post(self, content):
+        self.controller.create_post(content)
+
+    def view_posts(self):
+        posts = self.controller.get_posts()
+        # Render posts on the webpage
+
+  web_app = WebApp()
+  ```
+- Business logic
+
+  This layer contains the core logic of the application - this includes post creation and retrieval.
+  ```bash
+  # business_logic.py
+
+  class PostController:
+    def __init__(self):
+        self.data_access = PostDataAccess()
+
+    def create_post(self, content):
+        # Business logic for creating a new post
+        self.data_access.save_post(content)
+
+    def get_posts(self):
+        # Business logic for retrieving posts
+        return self.data_access.get_all_posts()
+  ```
+  
+- Data access
+
+  This layer interacts with the database or external data sources.
+  ```bash
+  # data_access.py
+
+  class PostDataAccess:
+    def save_post(self, content):
+        # Code to save the post to the database
+
+    def get_all_posts(self):
+        # Code to retrieve all posts from the database
+  ```
+
+#### Advantages
+
+- Testing is easier because you can test each layer by itself.
+- It's easy to use mocking or test databases for each layer.
+- Making changes in a layer has very little affect on other layers as they are loosely coupled.
