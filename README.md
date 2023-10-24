@@ -296,7 +296,8 @@ resource "aws_security_group" "example" {
 }
 ```
 **Deploy Containers:** To deploy containers, the example use a container orchestration tool - Kubernetes. In the Terraform configuration, you can define Kubernetes resources like pods, services, and deployments.
-```resource "kubernetes_deployment" "example" {
+```
+resource "kubernetes_deployment" "example" {
   metadata {
     name = "example-deployment"
   }
