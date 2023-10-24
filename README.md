@@ -364,6 +364,13 @@ Git flow is not used for continuous integration and that is why it is considered
 
 #### Explain what git blobs, trees, commits and tags are as git object types. Provide a brief explanation of their role in the git system. This answer should include screen shots of a git repository file system being explored showing the different object types.
 
+**Tags:**
+
+![image](https://github.com/MathiasJensen96/OLA2/assets/70536109/770e1937-0641-47d7-aefd-40db2d2fa69b)
+![image](https://github.com/MathiasJensen96/OLA2/assets/70536109/d2f45e3e-bab5-4c6f-80ce-4faa7291e904)
+
+
+
 ### 11)
 
 #### Explain what the following two commands mean: Provide examples of exploring the git objects stored in your local file system.
