@@ -380,6 +380,7 @@ Git flow is not used for continuous integration and that is why it is considered
 - Role: Blobs represent file content at a specific version. They store the actual data of files.
 - In the Git file system, blobs are associated with file content.
 
+![Git_objects](./documents/images/git-objects.png)
 
 ### 11)
 
