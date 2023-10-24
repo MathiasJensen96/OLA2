@@ -376,6 +376,9 @@ Git flow is not used for continuous integration and that is why it is considered
 
 ![image](https://github.com/MathiasJensen96/OLA2/assets/70536109/d2f45e3e-bab5-4c6f-80ce-4faa7291e904)
 
+**Blob (Binary Large Object):**
+- Role: Blobs represent file content at a specific version. They store the actual data of files.
+- In the Git file system, blobs are associated with file content.
 
 
 ### 11)
