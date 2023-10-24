@@ -298,6 +298,18 @@ $> find .git/objects
 $> git cat-file -p 3d8071 (where 3d8071 is a partial SHA1 hash)
 ```
 
+**`find .git/objects`**
+
+This command is used to list the objects in the `.git/objects` directory, which is where Git stores its object database. These objects are usually stored in subdirectories based on their SHA-1 hash values.
+
+![Git_objects](./documents/images/git-objects.png)
+
+**`git cat-file -p 95ba6f54`**
+
+This command is used to display the contents of a Git object using its SHA-1 hash. The `-p` option stands for "pretty-print", and is used to make the output more readable.
+
+![Git_objects](./documents/images/cat-file.png)
+
 ### 12)
 
 #### What does the `git cherry-pick` command do? Provide an example of using it and explain how it is useful.
