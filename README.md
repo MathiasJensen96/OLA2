@@ -329,6 +329,36 @@ Run `terraform init` to initialize the Terraform workspace, and then use `terraf
 
 #### Set up a git repository according to the rules of the Github Flow and Trunk based development strategies and explain the arguments for and against using them. As part of your answer explain why the Git Flow strategy is now considered out of date. Use tools like git log --graph demonstrate how files are stored in git using the different strategies.
 
+### Flow
+![image](https://github.com/MathiasJensen96/OLA2/assets/56347572/5d6e5532-27e2-43be-8082-6005c3a60713)
+
+Pros
+- Allows parallel development since feature branches are long-lived
+- Facilitates a continuous delivery workflow
+- Lessens the complexity of merging since fewer commits are required
+
+Cons
+- Takes time to adjust to
+- Makes project history challenging to read
+- Requires more effort to fix bugs
+
+### Trunk
+![image](https://github.com/MathiasJensen96/OLA2/assets/56347572/224040de-4106-430f-a97e-5ddc1b37e061)
+
+Pros
+- Allows continuous code integration
+- Reduces the risk of introducing bugs
+- Makes it easy to fix and deploy code quickly
+- Allows asynchronous code reviews
+- Allows comprehensive automated testing
+
+Cons
+- Increases the risk of bug creation since regression testing doesn't happen on every merge
+- Requires developers to wait for changes to go through test processes and automated builds before merging
+- Requires more manual effort to maintain the core trunk
+
+Git flow is not used for continuous integration and that is why it is considered out of date
+
 ### 10)
 
 #### Explain what git blobs, trees, commits and tags are as git object types. Provide a brief explanation of their role in the git system. This answer should include screen shots of a git repository file system being explored showing the different object types.
