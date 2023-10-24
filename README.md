@@ -161,7 +161,72 @@ In practice:
 
 #### Event Driven Architecture has been described as “a distributed, asynchronous software architecture pattern that integrates applications and components through the production and handling of events”. How would you explain this description to a business user? You might find it helpful to illustrate the answer with diagrams.
 
+**Analogy: The Office Party**
+
+Imagine your company is like hosting an office party. People in different departments or teams are attending, and they need to communicate and collaborate seamlessly. Event Driven Architecture is like organizing this party to make sure everyone can interact effectively.
+
+**Components of EDA:**
+
+**Events:** In the office party scenario, think of events as messages or announcements. These are notifications that something has happened or needs attention. In your business, events could be things like a new order from a customer, a payment confirmation, or a stock level reaching a critical point.
+
+**Asynchronous:** Instead of everyone being in one big meeting at the same time (synchronous), people can interact at their own pace during the party. In EDA, the communication happens at different times, and this flexibility makes it more efficient for handling different tasks and processes.
+
+**Integration:** Just as you'd want all the partygoers to connect and work together, EDA integrates different applications and systems in your company. It makes sure your sales system talks to your inventory system, and your customer support system communicates with your billing system.
+
+**Distributed:** In the party analogy, you might have different rooms or areas where people gather. EDA also works across different locations or departments in your business. It doesn't matter if your sales team is in one office and your IT team is in another – EDA helps them work together seamlessly.
+
+**Benefits of EDA:**
+
+**Flexibility:** EDA allows your business to respond to changes and events in real-time. Just like at a party, you don't need to wait for a big meeting to make decisions; you can act quickly when needed.
+
+**Scalability:** As your business grows, you can add more people to the party without disrupting the entire event. EDA can handle more events and data without a complete overhaul of your systems.
+
+**Reliability:** When someone leaves the party, others can still enjoy themselves. In EDA, if one component or system fails, it doesn't bring down the entire process. Your business can continue to function even when there are technical hiccups.
+
+**Efficiency:** Just as a well-organized party ensures that people have a good time, EDA helps your business run more smoothly. It streamlines processes and reduces bottlenecks, making your operations more efficient.
+
+In summary, Event Driven Architecture is like organizing an office party where people from different departments can communicate and collaborate efficiently, in their own time, while ensuring the event runs smoothly, adapts to changes, and can scale up as needed. This approach is valuable for modern businesses that need agility and seamless integration between various software systems.
+
+
 ### 6)
+
+#### What is the difference between a message queue (point to point pattern) and message topics (publish-subscribe pattern)? Provide diagrams to illustrate your explanation. 
+
+**Message queue**
+
+```
+Producer ----> |------- Queue -------| ----> Consumer
+               |                   |
+               |                   |
+               |                   |
+               |                   |
+
+```
+
+**Message topics**
+
+```
+Publisher ----> |------ Topic -------| ----> Subscriber 1
+                |                    |
+                |                    |
+                |                    |
+                |                    |
+               |                     ----> Subscriber 2
+               |
+               ----> Subscriber 3
+
+```
+
+Key differences:
+
+- **Message Queue**
+  - One-to-one
+  - Each message is consumed by a single recipient
+  - Often used for tasks that must be processed by a single worker.
+- **Message Topics**
+  - One-to-many
+  - Messages are broadcasted to multiple subscribers.
+  - Suitable for scenarios where multiple consumers are interested in the same type of message.
 
 
 ### 7)
