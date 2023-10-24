@@ -391,6 +391,8 @@ Git flow is not used for continuous integration and that is why it is considered
 - Role: Commits are snapshots of the entire project at a particular point in time. They include a reference to a tree, author information, commit message, and pointers to parent commits.
 - In the Git file system, commits are linked together to form a history of changes.
 
+![Commits](/documents/images/git-log.jpg)
+
 **Blob (Binary Large Object):**
 - Role: Blobs represent file content at a specific version. They store the actual data of files.
 - In the Git file system, blobs are associated with file content.
