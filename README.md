@@ -302,6 +302,21 @@ $> git cat-file -p 3d8071 (where 3d8071 is a partial SHA1 hash)
 
 #### What does the `git cherry-pick` command do? Provide an example of using it and explain how it is useful.
 
+Cherry picking is the act of picking a commit from a branch and applying it to another. git cherry-pick can be useful for undoing changes. For example, say a commit is accidently made to the wrong branch. You can switch to the correct branch and cherry-pick the commit to where it should belong.
+```
+a - b - c - d   Main
+         \
+           e - f - g Feature
+```
+You can find a commit reference by using git log. In this example we have constructed lets say we wanted to use commit `f` in main. First we ensure that we are working on the main branch.
+Then we can run the `git cherry-pick f` (change the `f` with the commit reference, the `f` is for demo purpose)
+```
+a - b - c - d - f   Main
+         \
+           e - f - g Feature
+```
+The commit `f` is now in main branch
+
 ### 13)
 
 #### Describe the role of CI/CD pipelines in managing software deployment.
