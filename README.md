@@ -6,6 +6,23 @@
 - Maria McNally, cph-mm620@cphbusiness.dk
 - Mathias Jensen, cph-mj839@cphbusiness.dk
 
+## Table of Contents
+
+-  [Questions](#questions)
+    - [Q1](#1)
+    - [Q2](#2)
+    - [Q3](#3)
+    - [Q4](#4)
+    - [Q5](#5)
+    - [Q6](#6)
+    - [Q7](#7)
+    - [Q8](#8)
+    - [Q9](#9)
+    - [Q10](#10)
+    - [Q11](#11)
+    - [Q12](#12)
+    - [Q13](#13)
+
 ## Questions
 
 ### 1) 
@@ -51,7 +68,7 @@ If we consider a web application where users can submit and view posts, the appl
 - Presentation Layer (UI)
 
   This layer handles the user interface and interactions. It is responsible for rendering web pages and handeling the users input.
-  ```bash
+  ```python
   # presentation_layer.py
 
   class WebApp:
@@ -70,7 +87,7 @@ If we consider a web application where users can submit and view posts, the appl
 - Business logic
 
   This layer contains the core logic of the application - this includes post creation and retrieval.
-  ```bash
+  ```python
   # business_logic.py
 
   class PostController:
@@ -89,7 +106,7 @@ If we consider a web application where users can submit and view posts, the appl
 - Data access
 
   This layer interacts with the database or external data sources.
-  ```bash
+  ```python
   # data_access.py
 
   class PostDataAccess:
@@ -102,7 +119,7 @@ If we consider a web application where users can submit and view posts, the appl
 
 #### Example testing scenario
 If we wanted to test the creation of a post in the layered archtecture the test could look something like this:
-```bash
+```python
 # Test for creating a post using a testing framework like pytest
 
 def test_create_post():
@@ -239,7 +256,8 @@ In a mediator topology, events flow through a central mediator, which routes and
 - **Complex Event Processing:** Mediator topologies are ideal for applications that require complex event processing, where events need to be filtered, transformed, or aggregated before reaching consumers.
 - **Content-Based Routing:** They are suitable for routing events based on content or metadata to specific consumers or services.
 - **Orchestration:** Mediator topologies are used in scenarios where events trigger orchestration of multiple services or components.
-```         +--------+
+```
+         +--------+
          | Source |
          +---+----+
              |
@@ -261,7 +279,8 @@ In a broker topology, events are published to a central broker, which then distr
 - **Publish-Subscribe:** Broker topologies are excellent for applications that require a publish-subscribe model, where events are broadcast to multiple consumers or subscribers.
 - **Scalable Fan-Out:** They are well-suited for scenarios where you need to distribute events to a large number of consumers efficiently.
 - **Loose Coupling:** Broker topologies promote loose coupling between event producers and consumers, making them suitable for decoupled and scalable systems.
-```+--------+    +--------+
+```
++--------+    +--------+
 | Source |    | Source |
 +---+----+    +---+----+
     |            |
@@ -364,11 +383,31 @@ Git flow is not used for continuous integration and that is why it is considered
 
 #### Explain what git blobs, trees, commits and tags are as git object types. Provide a brief explanation of their role in the git system. This answer should include screen shots of a git repository file system being explored showing the different object types.
 
+**Tree:**
+- Role: Trees represent directories or folders. They are like snapshots of a directory at a specific point in time and link to blobs or other trees.
+- In the Git file system, trees organize the hierarchy of directories and point to blobs and other trees.
+
+**Commit:**
+- Role: Commits are snapshots of the entire project at a particular point in time. They include a reference to a tree, author information, commit message, and pointers to parent commits.
+- In the Git file system, commits are linked together to form a history of changes.
+
+**Blob (Binary Large Object):**
+- Role: Blobs represent file content at a specific version. They store the actual data of files.
+- In the Git file system, blobs are associated with file content.
+
+![Git_objects](./documents/images/tag-blob.png)
+
 **Tags:**
+- Role: Tags are references or labels that are assigned to specific commits. They are typically used to mark important milestones or versions in a project's history.
+- In the Git file system, tags are used to provide meaningful names to specific commits.
+
+*How to make a tag in terminal:*
 
 ![image](https://github.com/MathiasJensen96/OLA2/assets/70536109/770e1937-0641-47d7-aefd-40db2d2fa69b)
-![image](https://github.com/MathiasJensen96/OLA2/assets/70536109/d2f45e3e-bab5-4c6f-80ce-4faa7291e904)
 
+*Tag shown in repository:*
+
+![image](https://github.com/MathiasJensen96/OLA2/assets/70536109/d2f45e3e-bab5-4c6f-80ce-4faa7291e904)
 
 
 ### 11)
