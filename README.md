@@ -281,6 +281,49 @@ In summary, mediator topologies are more appropriate for scenarios requiring eve
 
 #### Follow the Terraform introduction https://developer.hashicorp.com/terraform/intro and provide an example of how Terraform can be used to support provisioning infrastructure such as deploying containers. (the quick start tutorial will help https://developer.hashicorp.com/terraform/tutorials/docker-get-started)
 
+**Terraform configuration file:** Here theres is defined the necessary infrastructure resources. In this case, you would specify the infrastructure components required for container deployment.
+```provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_instance" "example" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = "t2.micro"
+}
+
+resource "aws_security_group" "example" {
+  name_prefix = "example-"
+}
+```
+**Deploy Containers:** To deploy containers, the example use a container orchestration tool - Kubernetes. In the Terraform configuration, you can define Kubernetes resources like pods, services, and deployments.
+```resource "kubernetes_deployment" "example" {
+  metadata {
+    name = "example-deployment"
+  }
+
+  spec {
+    replicas = 3
+
+    template {
+      metadata {
+        labels = {
+          app = "example"
+        }
+      }
+
+      spec {
+        container {
+          image = "nginx:latest"
+          name  = "example-container"
+        }
+      }
+    }
+  }
+}
+```
+**Initialize and Apply:**
+Run `terraform init` to initialize the Terraform workspace, and then use `terraform apply` to create the defined infrastructure and deploy containers. Terraform will create and configure the infrastructure resources based on your configuration.
+
 ### 9)
 
 #### Set up a git repository according to the rules of the Github Flow and Trunk based development strategies and explain the arguments for and against using them. As part of your answer explain why the Git Flow strategy is now considered out of date. Use tools like git log --graph demonstrate how files are stored in git using the different strategies.
