@@ -366,6 +366,14 @@ Git flow is not used for continuous integration and that is why it is considered
 
 #### Explain what git blobs, trees, commits and tags are as git object types. Provide a brief explanation of their role in the git system. This answer should include screen shots of a git repository file system being explored showing the different object types.
 
+**Tree:**
+- Role: Trees represent directories or folders. They are like snapshots of a directory at a specific point in time and link to blobs or other trees.
+- In the Git file system, trees organize the hierarchy of directories and point to blobs and other trees.
+
+**Commit:**
+- Role: Commits are snapshots of the entire project at a particular point in time. They include a reference to a tree, author information, commit message, and pointers to parent commits.
+- In the Git file system, commits are linked together to form a history of changes.
+
 **Blob (Binary Large Object):**
 - Role: Blobs represent file content at a specific version. They store the actual data of files.
 - In the Git file system, blobs are associated with file content.
