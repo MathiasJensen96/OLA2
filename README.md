@@ -127,4 +127,59 @@ Should this have been done using a monolithic approach there would have been no 
 
 #### One disadvantage of layered architecture is often given as the risk of 'leaking logic' between the layers. What does this mean in practice and why might it be a problem? - hint: What is the point of layers and how do we draw the boundary?
 
+The term 'leaking logic' refers to a project where the layers of the system becomes blurred. This means that code and logic that is ment for one layers starts to affect other layers. This is a problem because it can lead to a number of different issues and compromises the benefits of a layered architecture.
 
+In practice:
+- **Violation of separation of concerns:** Each layer has its own responsibility and should not be concerned with what other layers do.
+- **Reduced maintainability:** If the logic is scattered across several layers, it becomes harder to maintain the system. Changes in one layer may have unintended impact on another thus making the codebase more complex.
+- **Decreased reusability:** Code that is tightly coupled to a specific layer is less reusable.
+- **Testing challenges:** If logic is leaked it also makes testing harder as we are unsure of where the logic comes from.
+- **Performance issues:** Leaking logic can result in lowered performance. It might result in suboptimal queries or inefficient data.
+- **Security risks:** If logic from the security layer is leaked into another layer this is a big risk.
+- **Code duplication:** Leaked logic can result in duplicate code if similar functionality is implemented in multiple layers.
+
+
+### 4)
+
+#### Layers are Logical and Tiers are physical. A widely used version of N-tier involves three tiers – what are they and what is the role of each of them? This could be illustrated with an example application and diagrams.
+
+- Presentation Tier (User interface tier)
+  - **Role:** This is the top tier and it is responsible for receiving and presenting information to the user. This is what the user interacts with.
+  - **Components:** User interfaces, web pages, mobile app interfaces or whatever else the user might be able to interact with.
+  - **Responsibilities:** Handling user input, diplaying information and user friendly interface.
+- Application Tier (Business logic tier)
+  - **Role:** This is the middle tier and this is where the core logic and processing is done. This is what connects the presentation tier and the data tier.
+  - **Components:** Application servers, web servers etc.
+  - **Responsibility:** Processing and managing business rules, making decisions and coordinating communication.
+- Data Tier (Data storage tier)
+  - **Role:** This is the bottom tier and this is where the data is stored. This usually involves databases and other data storage mechanisms.
+  - **Components:** Databases, file systems, data storage services etc.
+  - **Responsibility:** Storing, retrieving and managing data as well as insuring integrity and security.
+
+
+### 5)
+
+#### Event Driven Architecture has been described as “a distributed, asynchronous software architecture pattern that integrates applications and components through the production and handling of events”. How would you explain this description to a business user? You might find it helpful to illustrate the answer with diagrams.
+
+### 6)
+
+
+### 7)
+
+
+### 8)
+
+
+### 9)
+
+
+### 10)
+
+
+### 11)
+
+
+### 12)
+
+
+### 13)
