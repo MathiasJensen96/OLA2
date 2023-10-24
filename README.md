@@ -234,6 +234,7 @@ Key differences:
 #### A mediator topology and a broker topology can both be used to manage event streams. Briefly describe what broker and mediator topologies are and the use cases they are best suited to. Use diagrams to illustrate your answer, which could relate to the same application but different services (ones better suited to a mediator topology and one to a broker technology)
 
 **Mediator Topology:**
+In a mediator topology, events flow through a central mediator, which routes and processes the events before delivering them to the appropriate consumers. This topology is best suited for applications requiring complex event processing, filtering, and transformation.
 
 - **Complex Event Processing:** Mediator topologies are ideal for applications that require complex event processing, where events need to be filtered, transformed, or aggregated before reaching consumers.
 - **Content-Based Routing:** They are suitable for routing events based on content or metadata to specific consumers or services.
@@ -255,6 +256,7 @@ Key differences:
     +-----------------+
 ```
 **Broker Topology:**
+In a broker topology, events are published to a central broker, which then distributes them to multiple consumers based on subscriptions. This topology is best suited for applications that require event broadcasting and scalable fan-out.
 
 - **Publish-Subscribe:** Broker topologies are excellent for applications that require a publish-subscribe model, where events are broadcast to multiple consumers or subscribers.
 - **Scalable Fan-Out:** They are well-suited for scenarios where you need to distribute events to a large number of consumers efficiently.
