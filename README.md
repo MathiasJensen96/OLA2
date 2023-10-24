@@ -386,7 +386,7 @@ Git flow is not used for continuous integration and that is why it is considered
 **Tree:**
 - Role: Trees represent directories or folders. They are like snapshots of a directory at a specific point in time and link to blobs or other trees.
 - In the Git file system, trees organize the hierarchy of directories and point to blobs and other trees.
-- 
+
 *How to find trees in terminal:*
 ![image](https://github.com/MathiasJensen96/OLA2/assets/70536109/47b39294-00a5-4dc1-9952-df47057654ee)
 
