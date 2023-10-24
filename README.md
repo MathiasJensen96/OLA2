@@ -282,7 +282,8 @@ In summary, mediator topologies are more appropriate for scenarios requiring eve
 #### Follow the Terraform introduction https://developer.hashicorp.com/terraform/intro and provide an example of how Terraform can be used to support provisioning infrastructure such as deploying containers. (the quick start tutorial will help https://developer.hashicorp.com/terraform/tutorials/docker-get-started)
 
 **Terraform configuration file:** Here there is defined the necessary infrastructure resources. In this case, you would specify the infrastructure components required for container deployment.
-```provider "aws" {
+```
+provider "aws" {
   region = "us-east-1"
 }
 
