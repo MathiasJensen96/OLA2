@@ -51,7 +51,7 @@ If we consider a web application where users can submit and view posts, the appl
 - Presentation Layer (UI)
 
   This layer handles the user interface and interactions. It is responsible for rendering web pages and handeling the users input.
-  ```bash
+  ```python
   # presentation_layer.py
 
   class WebApp:
@@ -70,7 +70,7 @@ If we consider a web application where users can submit and view posts, the appl
 - Business logic
 
   This layer contains the core logic of the application - this includes post creation and retrieval.
-  ```bash
+  ```python
   # business_logic.py
 
   class PostController:
@@ -89,7 +89,7 @@ If we consider a web application where users can submit and view posts, the appl
 - Data access
 
   This layer interacts with the database or external data sources.
-  ```bash
+  ```python
   # data_access.py
 
   class PostDataAccess:
@@ -102,7 +102,7 @@ If we consider a web application where users can submit and view posts, the appl
 
 #### Example testing scenario
 If we wanted to test the creation of a post in the layered archtecture the test could look something like this:
-```bash
+```python
 # Test for creating a post using a testing framework like pytest
 
 def test_create_post():
@@ -239,7 +239,8 @@ In a mediator topology, events flow through a central mediator, which routes and
 - **Complex Event Processing:** Mediator topologies are ideal for applications that require complex event processing, where events need to be filtered, transformed, or aggregated before reaching consumers.
 - **Content-Based Routing:** They are suitable for routing events based on content or metadata to specific consumers or services.
 - **Orchestration:** Mediator topologies are used in scenarios where events trigger orchestration of multiple services or components.
-```         +--------+
+```
+         +--------+
          | Source |
          +---+----+
              |
@@ -261,7 +262,8 @@ In a broker topology, events are published to a central broker, which then distr
 - **Publish-Subscribe:** Broker topologies are excellent for applications that require a publish-subscribe model, where events are broadcast to multiple consumers or subscribers.
 - **Scalable Fan-Out:** They are well-suited for scenarios where you need to distribute events to a large number of consumers efficiently.
 - **Loose Coupling:** Broker topologies promote loose coupling between event producers and consumers, making them suitable for decoupled and scalable systems.
-```+--------+    +--------+
+```
++--------+    +--------+
 | Source |    | Source |
 +---+----+    +---+----+
     |            |
