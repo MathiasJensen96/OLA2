@@ -231,20 +231,34 @@ Key differences:
 
 ### 7)
 
+#### A mediator topology and a broker topology can both be used to manage event streams. Briefly describe what broker and mediator topologies are and the use cases they are best suited to. Use diagrams to illustrate your answer, which could relate to the same application but different services (ones better suited to a mediator topology and one to a broker technology)
+
 
 ### 8)
 
+#### Follow the Terraform introduction https://developer.hashicorp.com/terraform/intro and provide an example of how Terraform can be used to support provisioning infrastructure such as deploying containers. (the quick start tutorial will help https://developer.hashicorp.com/terraform/tutorials/docker-get-started)
 
 ### 9)
 
+#### Set up a git repository according to the rules of the Github Flow and Trunk based development strategies and explain the arguments for and against using them. As part of your answer explain why the Git Flow strategy is now considered out of date. Use tools like git log --graph demonstrate how files are stored in git using the different strategies.
 
 ### 10)
 
+#### Explain what git blobs, trees, commits and tags are as git object types. Provide a brief explanation of their role in the git system. This answer should include screen shots of a git repository file system being explored showing the different object types.
 
 ### 11)
 
+#### Explain what the following two commands mean: Provide examples of exploring the git objects stored in your local file system.
+
+```
+$> find .git/objects
+$> git cat-file -p 3d8071 (where 3d8071 is a partial SHA1 hash)
+```
 
 ### 12)
 
+#### What does the `git cherry-pick` command do? Provide an example of using it and explain how it is useful.
 
 ### 13)
+
+#### Describe the role of CI/CD pipelines in managing software deployment.
