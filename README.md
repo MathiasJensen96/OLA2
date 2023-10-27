@@ -235,9 +235,9 @@ Publisher ----> |------ Topic -------| ----> Subscriber 1
                 |                    |
                 |                    |
                 |                    |
-               |                     ----> Subscriber 2
-               |
-               ----> Subscriber 3
+                |                     ----> Subscriber 2
+                |
+                 ----> Subscriber 3
 
 ```
 
@@ -254,7 +254,7 @@ Key differences:
 
 ### 7)
 
-**A mediator topology and a broker topology can both be used to manage event streams. Briefly describe what broker and mediator topologies are and the use cases they are best suited to. Use diagrams to illustrate your answer, which could relate to the same application but different services (ones better suited to a mediator topology and one to a broker technology)**
+**A mediator topology and a broker topology can both be used to manage event streams. Briefly describe what broker and mediator topologies are and the use cases they are best suited to. Use diagrams to illustrate your answer, which could relate to the same application but different services (ones better suited to a mediator topology and one to a broker technology).**
 
 **Mediator Topology:**
 In a mediator topology, events flow through a central mediator, which routes and processes the events before delivering them to the appropriate consumers. This topology is best suited for applications requiring complex event processing, filtering, and transformation.
@@ -397,7 +397,7 @@ Cons
 - Requires developers to wait for changes to go through test processes and automated builds before merging
 - Requires more manual effort to maintain the core trunk
 
-Git flow is not used for continuous integration and that is why it is considered out of date
+Git flow is not used for continuous integration and that is why it is considered out of date.
 
 ### 10)
 
