@@ -434,6 +434,8 @@ _How to make a tag in terminal:_
 
 ![image](https://github.com/MathiasJensen96/OLA2/assets/70536109/770e1937-0641-47d7-aefd-40db2d2fa69b)
 
+Tags are also used by GitHub to mark _releases_.
+
 _Tag shown in repository:_
 
 ![image](https://github.com/MathiasJensen96/OLA2/assets/70536109/d2f45e3e-bab5-4c6f-80ce-4faa7291e904)
