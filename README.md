@@ -61,7 +61,7 @@ Closed layers are great in terms of maintaining the integrity of a system and to
 
 **Testability is often given as an advantage of layered architectures. How does a layered architecture make testing easier and more structured?**
 
-A layered architecture is often preferred in software design due to its advatages in terms of testability, maintainabilty and scalability. Here testability is on of the main benefits because it helps to create a more manageable approach to software testing. This is primarily done through the principle of loose coupling and separation of concerns.
+A layered architecture is often preferred in software design due to its advatages in terms of testability, maintainabilty and scalability. Here testability is one of the main benefits because it helps to create a more manageable approach to software testing. This is primarily done through the principle of loose coupling and separation of concerns.
 
 **Provide an example of how testing can be supported by using a layered architectural approach.**
 
@@ -69,7 +69,7 @@ If we consider a web application where users can submit and view posts, the appl
 
 - Presentation Layer (UI)
 
-  This layer handles the user interface and interactions. It is responsible for rendering web pages and handeling the users input.
+  This layer handles the user interface and interactions. It is responsible for rendering web pages and handling the users input.
 
   ```python
   # presentation_layer.py
@@ -153,7 +153,7 @@ Should this have been done using a monolithic approach there would have been no 
 
 **One disadvantage of layered architecture is often given as the risk of 'leaking logic' between the layers. What does this mean in practice and why might it be a problem? - hint: What is the point of layers and how do we draw the boundary?**
 
-The term 'leaking logic' refers to a project where the layers of the system becomes blurred. This means that code and logic that is ment for one layers starts to affect other layers. This is a problem because it can lead to a number of different issues and compromises the benefits of a layered architecture.
+The term 'leaking logic' refers to a project where the layers of the system becomes blurred. This means that code and logic that is meant for one layers starts to affect other layers. This is a problem because it can lead to a number of different issues and compromises the benefits of a layered architecture.
 
 In practice:
 
